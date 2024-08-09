@@ -22,7 +22,6 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
             preferences[NIM_KEY] = user.nim
             preferences[NAME_KEY] = user.name
             preferences[CLASS_KEY] = user.className
-            preferences[IS_LOGIN_KEY] = true
         }
     }
 
@@ -52,7 +51,6 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
         private val NIM_KEY = stringPreferencesKey("nim")
         private val NAME_KEY = stringPreferencesKey("name")
         private val CLASS_KEY = stringPreferencesKey("class_name")
-        private val IS_LOGIN_KEY = booleanPreferencesKey("is_login")
 
         fun getInstance(dataStore: DataStore<Preferences>): UserPreference {
             return INSTANCE ?: synchronized(this) {

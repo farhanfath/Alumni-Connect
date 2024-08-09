@@ -2,6 +2,7 @@ package dts.pnj.farhan.data
 
 import android.annotation.SuppressLint
 import android.content.Context
+import dts.pnj.farhan.data.database.user.User
 import dts.pnj.farhan.data.database.user.UserDao
 import dts.pnj.farhan.data.response.UserPref
 import kotlinx.coroutines.flow.Flow
@@ -16,12 +17,20 @@ class DataRepository (
         pref.saveUser(user)
     }
 
-    fun getUser(): Flow<UserPref> {
+    fun getUserData(): Flow<UserPref> {
         return pref.getUser()
     }
 
     suspend fun logout() {
         pref.logout()
+    }
+
+    suspend fun insertUser(user: User) {
+        userDao.insert(user)
+    }
+
+    suspend fun getUser(email: String, password: String): User? {
+        return userDao.getUser(email, password)
     }
 
     companion object {

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">AlumniConnect</string>
+    <string name="register">Daftar</string>
+    <string name="nimHint">Nim</string>
+    <string name="nameHint">Nama</string>
+    <string name="classHint">Kelas</string>
+    <string name="emailHint">Email</string>
+    <string name="passHint">Password</string>
+    <string name="textLogin">Sudah Memiliki Akun?</string>
+    <string name="loginBtnText"><u>Masuk Disini</u></string>
+    <string name="required">Harap Diisi Kolom Yang Kosong</string>
+    <string name="login">Masuk</string>
+    <string name="textRegister">Belum Memiliki Akun?</string>
+    <string name="registerBtnText"><u>Daftar Disini</u></string>
+
 </resources>
