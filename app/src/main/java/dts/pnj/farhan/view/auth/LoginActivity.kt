@@ -10,7 +10,7 @@ import dts.pnj.farhan.R
 import dts.pnj.farhan.databinding.ActivityLoginBinding
 import dts.pnj.farhan.utils.ViewModelFactory
 import dts.pnj.farhan.utils.viewmodel.MainViewModel
-import dts.pnj.farhan.view.MainActivity
+import dts.pnj.farhan.view.home.HomeActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -24,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         binding.loginBtn.setOnClickListener { loginUser() }
         binding.toRegisterText.setOnClickListener { startActivity(Intent(this, RegisterActivity::class.java)) }
@@ -61,7 +62,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun successLoginHandler() {
         Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, HomeActivity::class.java))
         finish()
     }
 

@@ -10,8 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.asLiveData
 import dts.pnj.farhan.data.UserPreference
 import dts.pnj.farhan.data.dataStore
-import dts.pnj.farhan.view.MainActivity
 import dts.pnj.farhan.view.auth.LoginActivity
+import dts.pnj.farhan.view.home.HomeActivity
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 
@@ -29,6 +29,7 @@ class SplashActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.hide()
 
         userPreference = UserPreference.getInstance(applicationContext.dataStore)
 
@@ -49,7 +50,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun navigateToMain() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, HomeActivity::class.java))
         finish()
     }
 }
