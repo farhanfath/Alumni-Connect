@@ -3,7 +3,7 @@ package dts.pnj.farhan.utils
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import dts.pnj.farhan.data.DataRepository
+import dts.pnj.farhan.data.repository.DataRepository
 import dts.pnj.farhan.utils.viewmodel.MainViewModel
 
 class ViewModelFactory(private val repository: DataRepository) : ViewModelProvider.NewInstanceFactory() {

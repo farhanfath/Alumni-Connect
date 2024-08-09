@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.asLiveData
-import dts.pnj.farhan.data.UserPreference
-import dts.pnj.farhan.data.dataStore
+import dts.pnj.farhan.data.repository.UserPreference
+import dts.pnj.farhan.data.repository.dataStore
 import dts.pnj.farhan.view.auth.LoginActivity
 import dts.pnj.farhan.view.home.HomeActivity
 import kotlinx.coroutines.MainScope

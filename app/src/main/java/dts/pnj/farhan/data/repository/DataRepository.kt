@@ -1,4 +1,4 @@
-package dts.pnj.farhan.data
+package dts.pnj.farhan.data.repository
 
 import android.annotation.SuppressLint
 import android.content.Context

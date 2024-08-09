@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import dts.pnj.farhan.data.DataRepository
+import dts.pnj.farhan.data.repository.DataRepository
 import dts.pnj.farhan.data.database.user.User
 import dts.pnj.farhan.data.response.UserPref
 import kotlinx.coroutines.launch

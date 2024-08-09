@@ -14,11 +14,14 @@
     <string name="registerBtnText"><u>Daftar Disini</u></string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
     <string name="title_news">News</string>
     <string name="title_profile">Profile</string>
     <string name="profileText">PROFILE PENGGUNA</string>
     <string name="logout">LOG OUT</string>
-
+    <string name="aboutApp">TENTANG APLIKASI</string>
+    <string name="about">
+        <![CDATA[
+        Selamat datang di <b>AlumniConnect!</b> Kami di sini untuk membantu Anda dengan cara yang mudah dan menyenangkan dalam mengelola dan memperbarui informasi alumni. Dengan berbagai fitur menarik, Anda bisa terhubung lagi dengan teman lama, memperluas jaringan profesional Anda, dan memastikan informasi alumni tetap up-to-date. Ayo, jalin kembali hubungan berharga Anda dan nikmati pengalaman ini bersama kami!
+        ]]>
+    </string>
 </resources>
