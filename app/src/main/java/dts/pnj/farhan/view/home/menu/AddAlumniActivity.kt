@@ -61,7 +61,7 @@ class AddAlumniActivity : AppCompatActivity() {
         val nim = binding.nimEt.text.toString()
         val name = binding.nameEt.text.toString()
         val birthDate = binding.birthDateEt.text.toString()
-        val birthPlace = binding.BirthPlaceEt.text.toString()
+        val birthPlace = binding.birthPlaceEt.text.toString()
         val address = binding.addressEt.text.toString()
         val religion = binding.religionEt.text.toString()
         val phoneNumber = binding.phoneNumberEt.text.toString()

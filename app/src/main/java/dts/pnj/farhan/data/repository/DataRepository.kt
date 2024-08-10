@@ -62,10 +62,6 @@ class DataRepository (
         return alumniDao.getAllAlumni()
     }
 
-    suspend fun getAlumniById(alumniId: Int): Alumni? {
-        return alumniDao.getAlumniById(alumniId)
-    }
-
     companion object {
         @SuppressLint("StaticFieldLeak")
         @Volatile

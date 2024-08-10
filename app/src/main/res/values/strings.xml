@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AlumniConnect</string>
+    <string name="app_name">Alumni Connect</string>
     <string name="register">Daftar</string>
     <string name="nimHint">Nim</string>
     <string name="nameHint">Nama</string>
@@ -45,4 +45,9 @@
     <string name="loginSuccess">Login successful</string>
     <string name="title_news_top">Berita Seputar Alumni</string>
     <string name="title_home_top">Selamat Datang</string>
+    <string name="nimAlumni">NIM :</string>
+    <string name="nameAlumni">NAMA :</string>
+    <string name="delete">hapus data</string>
+    <string name="update">update data</string>
+    <string name="alumniDetailTitle">Data Alumni</string>
 </resources>

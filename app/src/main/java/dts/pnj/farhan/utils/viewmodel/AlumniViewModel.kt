@@ -48,12 +48,14 @@ class AlumniViewModel(private val repository: DataRepository) : ViewModel() {
     fun removeAlumni(alumni: Alumni) {
         viewModelScope.launch {
             repository.deleteAlumni(alumni)
+            loadAllAlumni()
         }
     }
 
     fun updateAlumni(alumni: Alumni) {
         viewModelScope.launch {
             repository.updateAlumni(alumni)
+            loadAllAlumni()
         }
     }
 }

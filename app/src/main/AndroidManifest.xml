@@ -15,9 +15,17 @@
         android:theme="@style/Theme.AlumniConnect"
         tools:targetApi="31">
         <activity
+            android:name=".view.home.menu.alumnidata.DetailAlumniActivity"
+            android:parentActivityName=".view.home.menu.alumnidata.AlumniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.home.menu.alumnidata.AlumniActivity"
+            android:parentActivityName=".view.home.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.home.menu.AddAlumniActivity"
             android:exported="false"
-            android:parentActivityName=".view.home.HomeActivity"/>
+            android:parentActivityName=".view.home.HomeActivity" />
         <activity
             android:name=".view.home.ui.news.detailnews.DetailNewsActivity"
             android:exported="false"
