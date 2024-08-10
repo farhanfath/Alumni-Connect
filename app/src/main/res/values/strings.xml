@@ -27,4 +27,22 @@
     <string name="image_desc">gambar Berita</string>
     <string name="example20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n</string>
     <string name="example50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="alumniText">Data Alumni</string>
+    <string name="addDataText">Tambah Data</string>
+    <string name="logoutText">Log Out</string>
+    <string name="alumniAddTitle">Pendataan Alumni</string>
+    <string name="birthPlaceHint">Tempat Lahir</string>
+    <string name="birthDateHint">Tanggal Lahir</string>
+    <string name="addressHint">Alamat</string>
+    <string name="religionHint">Agama</string>
+    <string name="phoneNumberHint">Nomor Telepon</string>
+    <string name="joinYearHint">Tahun Masuk</string>
+    <string name="graduateYearHint">Tahun Lulus</string>
+    <string name="jobHint">Pekerjaan</string>
+    <string name="positionHint">Jabatan</string>
+    <string name="save">Simpan Data</string>
+    <string name="confirmLogin">Gagal Masuk. Harap cek kembali email dan password yang anda masukkan!</string>
+    <string name="loginSuccess">Login successful</string>
+    <string name="title_news_top">Berita Seputar Alumni</string>
+    <string name="title_home_top">Selamat Datang</string>
 </resources>

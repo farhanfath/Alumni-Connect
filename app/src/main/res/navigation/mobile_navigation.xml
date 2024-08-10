@@ -8,13 +8,13 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="dts.pnj.farhan.view.home.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_home_top"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_news"
         android:name="dts.pnj.farhan.view.home.ui.news.NewsFragment"
-        android:label="@string/title_news"
+        android:label="@string/title_news_top"
         tools:layout="@layout/fragment_news" />
 
     <fragment

@@ -9,9 +9,12 @@ import dts.pnj.farhan.data.database.AppDatabase
 object Utility {
     fun provideRepository(context: Context): DataRepository {
         val pref = UserPreference.getInstance(context.dataStore)
-        val profileDao = requireNotNull(AppDatabase.getDatabase(context)?.userDao()) {
+        val userDao = requireNotNull(AppDatabase.getDatabase(context)?.userDao()) {
             "Failed to obtain UserDao"
         }
-        return DataRepository.getInstance(pref, context, profileDao)
+        val alumniDao = requireNotNull(AppDatabase.getDatabase(context)?.alumniDao()) {
+            "Failed to obtain alumniDao"
+        }
+        return DataRepository.getInstance(pref, context, userDao, alumniDao)
     }
 }

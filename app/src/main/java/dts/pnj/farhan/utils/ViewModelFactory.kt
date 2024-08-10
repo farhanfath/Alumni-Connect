@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import dts.pnj.farhan.data.repository.DataRepository
+import dts.pnj.farhan.utils.viewmodel.AlumniViewModel
 import dts.pnj.farhan.utils.viewmodel.MainViewModel
 
 class ViewModelFactory(private val repository: DataRepository) : ViewModelProvider.NewInstanceFactory() {
@@ -13,6 +14,9 @@ class ViewModelFactory(private val repository: DataRepository) : ViewModelProvid
         return when {
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(AlumniViewModel::class.java) -> {
+                AlumniViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

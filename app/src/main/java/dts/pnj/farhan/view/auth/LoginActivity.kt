@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                         if (isLoggedIn) {
                             successLoginHandler()
                         } else {
-                            Toast.makeText(this, "Login failed. Check your email and password.", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, getString(R.string.confirmLogin), Toast.LENGTH_SHORT).show()
                         }
                     }.onFailure {
                         Toast.makeText(this, "Login failed: ${it.message}", Toast.LENGTH_SHORT).show()
@@ -61,7 +61,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun successLoginHandler() {
-        Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.loginSuccess), Toast.LENGTH_SHORT).show()
         startActivity(Intent(this, HomeActivity::class.java))
         finish()
     }

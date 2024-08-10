@@ -4,11 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import dts.pnj.farhan.data.database.alumni.Alumni
+import dts.pnj.farhan.data.database.alumni.AlumniDao
 import dts.pnj.farhan.data.database.user.User
 import dts.pnj.farhan.data.database.user.UserDao
 
 @Database(
-    entities = [User::class],
+    entities = [User::class, Alumni::class],
     version = 1
 )
 abstract class AppDatabase: RoomDatabase() {
@@ -26,4 +28,5 @@ abstract class AppDatabase: RoomDatabase() {
         }
     }
     abstract fun userDao(): UserDao
+    abstract fun alumniDao(): AlumniDao
 }
